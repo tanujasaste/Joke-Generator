@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joke Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <h1 class="title">The Joke Generator 😂</h1>
+    
+    
+    <div class="joke-display">
+      <p class="joke-text">Click below to hear a joke!</p>
+    </div>
+    
+    
+    <button class="joke-button" onclick="generateJoke()">Make Me Laugh!</button>
+    
+    
+    <div class="rating">
+      <span class="emoji" title="Hilarious">😂</span>
+      <span class="emoji" title="Pretty Funny">😆</span>
+      <span class="emoji" title="Not Bad">😐</span>
+      <span class="emoji" title="Next Joke, Please!">🙄</span>
+    </div>
+    
+    
+    <div class="mood-selection">
+      <h2>Choose Your Mood:</h2>
+      <span class="mood-emoji" onclick="setCategory('Programming')" title="Programming Jokes">💻</span>
+      <span class="mood-emoji" onclick="setCategory('Miscellaneous')" title="Miscellaneous Jokes">🧐</span>
+      <span class="mood-emoji" onclick="setCategory('Any')" title="Any Jokes">😂</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
